@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style> 
+
+div
+{
+    border:15px solid transparent;
+    width:300px;
+    padding:10px 20px;
+}
+
+#round
+{
+	/*
+    -moz-border-image:url(img/border.png) 30 30 round;	
+    -webkit-border-image:url(img/border.png) 30 30 round;
+    -o-border-image:url(img/border.png) 30 30 round;*/
+    border-image:url(img/border.png);
+    /*border-image-outset: 10;
+    border-image-slice: 10;
+    border-image-width: 10;
+    border-image-repeat: round;*/
+}
+
+#stretch
+{
+    -moz-border-image:url(img/border.png) 30 30 stretch;
+    -webkit-border-image:url(img/border.png) 30 30 stretch;
+    -o-border-image:url(img/border.png) 30 30 stretch;
+    
+    border-image:url(img/border.png) 30 30 stretch;
+}
+</style>
+</head>
+<body>
+
+<div id="round">在这里，图片铺满整个边框。</div>
+<br>
+<div id="stretch">在这里，图片被拉伸以填充该区域。</div>
+
+<p>这是使用的图片：</p>
+<img src="img/border.png">
+
+</body>
+</html>

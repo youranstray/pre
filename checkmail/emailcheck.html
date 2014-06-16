@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>邮箱检测</title>
+	<script language="javascript">
+function emailCheck () {
+var emailStr=document.all.myModal.email.value;
+var emailPat=/^(.+)@(.+)$/;
+var matchArray=emailStr.match(emailPat);
+if (matchArray==null) {
+alert("电子邮件地址必须包括 ( @ 和 . )")
+return false;
+}
+return true;
+}
+</script>
+</head>
+
+<body>
+
+<form name="myModal">
+  <input type="text" name="email" placeholder="email">
+  <button value="press" onclick="emailCheck()">创建</button>
+	
+</form>
+
+<!-- <div class="modal fade" id="myModal" name="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h4 class="modal-title" id="myModalLabel">活动报名</h4>
+			      </div>
+			      <div class="modal-body">
+			        <div class="login_frame">
+					<input type="text" class="form-control motal-input" placeholder="姓名" id='name'>
+					<input type="text"  class="form-control motal-input" placeholder="公司" id="company">
+					<input type="text" class="form-control motal-input" placeholder="手机" id='phone'>
+					<input type="text" name="email" class="form-control motal-input" placeholder="email" id='eamil' >
+					<input type="text" class="form-control motal-input" placeholder="捐赠金额" id='sum'>
+					<input type="text" class="form-control motal-input" placeholder="捐赠物资" id='material'>
+					<input type="text" class="form-control motal-input" placeholder="地址" id='address'>
+					<input type="checkbox" id='5_11' >参加5.11义卖
+					<input type="checkbox" id="5_17" >参加5.17走进山东曹县
+					
+				</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			        <a href="#add">
+			        	<input type="button" value="创建" onclick="emailCheck()">	
+			        </a>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  <!-- </div>/.modal-dialog
+			</div> --><!-- /.modal -->
+
+</body>
+</html>

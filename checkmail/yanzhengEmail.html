@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+<script language="javascript">
+function emailCheck () {
+var emailStr=document.all.form1.tel.value;
+var emailPat=/^(.+)@(.+)$/;
+var matchArray=emailStr.match(emailPat);
+if (matchArray==null) {
+alert("电子邮件地址必须包括 ( @ 和 . )")
+return false;
+}
+return true;
+}
+</script>
+</head>
+
+<body>
+<form name="form1">
+<input type="text" name="tel"/>
+<input type="button" value="press" onclick="emailCheck()"/>
+</form>
+
+
+</span>
+</body>
+</html>
