@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>clear属性</title>
+    <style>
+    *
+    {
+    	margin:0;
+    	padding:0;
+    	color:#fff;
+    }
+    ul
+    {
+    	background:red;
+    	list-style:none;
+    }
+    ul li
+    {
+    	float:left; 
+    	background:red;
+    	margin:5px;
+    }
+    p
+    {
+    	background:green;
+    }
+    .clear
+    {
+    	clear:both;
+    	/*height:20px;*/
+    	/*overflow:hidden;*/
+    }
+    </style>
+
+</head>
+<body>
+  <ul>
+	<li>浮动~~</li>
+	<li>我是浮动~~</li>
+	<li>我是浮动~~</li>
+	<li>我是浮动~~</li>
+	<li class="clear">我将不再浮动~~</li>
+  </ul>
+  <!-- <p>
+	 我将不再浮动~~~
+  </p> -->
+</body>
+</html>

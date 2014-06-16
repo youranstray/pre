@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>设置overflow为auto清除浮动</title>
+	<style>
+	*
+	{
+		margin:0;
+		padding:0;
+		color:#fff;
+		}
+		ul
+		{
+			background:red;
+			list-style:none;
+			overflow:auto;
+			_zoom:1;
+			/*zoom是为了兼容ie6做的，触发ie6下的haslayout属性*/
+		}
+		ul li
+		{
+			float:left; 
+			background:red;
+			margin:5px;
+		}
+		p
+		{
+			background:green;
+		}
+</style>
+
+</head>
+<body>
+  <ul>
+	<li>浮动~~</li>
+	<li>我是浮动~~</li>
+	<li>我是浮动~~</li>
+	<li>我是浮动~~</li>
+  </ul>
+  <p>
+	 我将不再浮动~~~
+  </p>
+</body>
+</html>

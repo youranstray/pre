@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xml:lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn"> 
+<head> 
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" /> 
+<meta http-equiv="Content-Language" content="zh-cn" /> 
+<meta name="robots" content="all" /> 
+<meta name="author" content=""/> 
+<meta name="Copyright" content=""/> 
+<meta name="Description" content="." /> 
+<meta name="Keywords" content="" /> 
+<title>Twinsen Liang-je m' appelle twinsèn.</title> 
+<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" /> 
+<link rel="Bookmark" href="/favicon.ico" type="image/x-icon" /> 
+<link rel="alternate" type="application/rss+xml" title="RSS news feed" href="/rss.xml" /> 
+<style type="text/css"> 
+/*<![CDATA[*/ 
+ul { 
+list-style:none; 
+margin:0; 
+padding:0; 
+background-color:#A9CE78; 
+} 
+li { 
+float:left; 
+width:40px; 
+height:40px; 
+background-color:#66C7F7; 
+padding:5px; 
+margin-right:2px; 
+color:#FFF; 
+font-family:"Arial Black"; 
+} 
+.demo { 
+width:800px; 
+} 
+.demo div { 
+border:2px solid #FF6767; 
+background:#FF6767; 
+margin-bottom:5px; 
+} 
+#after ul{ 
+zoom:1; 
+} 
+#after ul:after { 
+content:""; 
+display:block; 
+height:0; 
+line-height:0; 
+clear:both; 
+visibility:hidden; 
+} 
+#afterout div:after { 
+content:""; 
+display:block; 
+height:0; 
+line-height:0; 
+clear:both; 
+visibility:hidden; 
+} 
+h1 { 
+color:#66C7F7; 
+font-family:"Arial Black"; 
+margin:0; 
+padding:0; 
+font-size:20px; 
+clear:both; 
+} 
+h2 { 
+color:#66C7F7; 
+font-family:"Arial Black"; 
+margin:0; 
+padding:0; 
+font-size:16px; 
+clear:both; 
+} 
+#brcssclear div{ 
+zoom:1; 
+} 
+#brpropertyclear div{ 
+zoom:1; 
+} 
+#cssoverflowauto ul { 
+overflow:auto; 
+zoom:1; 
+} 
+#cssoverflowhidden ul { 
+overflow:hidden; 
+zoom:1; 
+} 
+#cssdisplaytable ul { 
+display:table; 
+zoom:1; 
+} 
+#cssoverflowautoout div{ 
+overflow:auto; 
+zoom:1; 
+} 
+#cssoverflowhiddenout div{ 
+overflow:hidden; 
+zoom:1; 
+} 
+#cssdisplaytableout div{ 
+display:table; 
+zoom:1; 
+} 
+.cleardiv{ 
+zoom:1; 
+} 
+#brcssclear br.clear, 
+#divcssclear div.clear{ 
+clear:both; 
+height:0; 
+line-height:0; 
+margin:0; 
+padding:0; 
+border:0; 
+overflow:hidden; 
+} 
+/*]]>*/ 
+</style> 
+</head> 
+<body> 
+<h1>Cealr Fix Layout</h1> 
+<div id="after" class="demo"> 
+<h2>Css :after</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+</div> 
+</div> 
+<div id="cssoverflowauto" class="demo"> 
+<h2>Css overflow:auto</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+</div> 
+</div> 
+<div id="cssoverflowhidden" class="demo"> 
+<h2>Css overflow:hidden</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+</div> 
+</div> 
+<div id="cssdisplaytable" class="demo"> 
+<h2>Css display:table</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+</div> 
+</div> 
+<div id="divcssclear" class="demo"> 
+<h2>Div css clear</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+<div class="clear"></div> 
+</div> 
+</div> 
+<div id="brcssclear" class="demo"> 
+<h2>Br css clear</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+<br class="clear" /> 
+</div> 
+</div> 
+<div id="brpropertyclear" class="demo"> 
+<h2>Br property clear</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+<br clear="all" /> 
+</div> 
+</div> 
+<div id="normal" class="demo"> 
+<h2>Normal</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+</div> 
+</div> 
+<div id="afterout" class="demo"> 
+<h2>Css :after out</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+</div> 
+</div> 
+<div id="cssoverflowautoout" class="demo"> 
+<h2>Css overflow:auto out</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+</div> 
+</div> 
+<div id="cssoverflowhiddenout" class="demo"> 
+<h2>Css overflow:hidden out</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+</div> 
+</div> 
+<div id="cssdisplaytableout" class="demo"> 
+<h2>Css display:table out</h2> 
+<div> 
+<ul> 
+<li>1</li> 
+<li>2</li> 
+<li>3</li> 
+<li>4</li> 
+<li>5</li> 
+<li>6</li> 
+<li>7</li> 
+<li>8</li> 
+<li>9</li> 
+</ul> 
+</div> 
+</div> 
+</body> 
+</html> 
